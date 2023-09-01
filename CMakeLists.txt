@@ -12,11 +12,10 @@ FetchContent_Declare(
   GIT_TAG        main
 )
 
-FetchContent_MakeAvailable(cmake_utilities)
+# Use a custom file name for dependency files
+set(REPOMAN_DEPENDENCIES_FILE_NAME "dependencies.txt" CACHE STRING "")
 
-fetchcontent_dependencies(
-    FILENAME dependencies.txt 
-    WORKSPACE ws)
+FetchContent_MakeAvailable(cmake_utilities)
 
 
 ################################################################################

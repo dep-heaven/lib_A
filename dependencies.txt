@@ -1,12 +1,13 @@
 # Please add dependencies as 
-# <LOWERCASE_NAME> <URL> <space> <GIT TAG> [<space> <args for add_subdirectory like EXCLUDE_FROM_ALL>] 
+# <LOWERCASE_NAME> GIT_REPOSITORY <URL> GIT_TAG <GIT TAG>
+# Hint: Any valid argument list for FetchContent_Declare is feasible here
 
 # Internal dependencies
 # TBD
 
 # External dependencies
-catch2 https://github.com/catchorg/Catch2 v2.x
-fmt https://github.com/fmtlib/fmt master
+catch2 GIT_REPOSITORY https://github.com/catchorg/Catch2 GIT_TAG v2.x
+fmt GIT_REPOSITORY https://github.com/fmtlib/fmt GIT_TAG master
 
 # There must be a newline at the end of file
 # See https://unix.stackexchange.com/questions/18743/whats-the-point-in-adding-a-new-line-to-the-end-of-a-file
