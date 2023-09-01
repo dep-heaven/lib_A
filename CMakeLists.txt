@@ -17,6 +17,8 @@ set(REPOMAN_DEPENDENCIES_FILE_NAME "dependencies.txt" CACHE STRING "")
 
 FetchContent_MakeAvailable(cmake_utilities)
 
+list(APPEND CMAKE_MODULE_PATH ${cmake_utilities_SOURCE_DIR}/experiments)
+include(CompilerFlags)
 
 ################################################################################
 # the library
