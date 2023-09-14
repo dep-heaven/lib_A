@@ -1,4 +1,5 @@
-# Please add dependencies as 
+Version: v1.0.0
+# Please add dependencies as
 # <LOWERCASE_NAME> GIT_REPOSITORY <URL> GIT_TAG <GIT TAG>
 # Hint: Any valid argument list for FetchContent_Declare is feasible here
 
